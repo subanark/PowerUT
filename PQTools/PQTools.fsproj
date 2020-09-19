@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Mashup.Preview.X64" Version="2.66.5376.421" />
+    <PackageReference Include="Microsoft.Data.Mashup.X64" Version="2.66.5376.421" />
+    <PackageReference Include="Microsoft.PowerBI.DataConnectors.X64" Version="2.83.5894.181" />
+  </ItemGroup>
+
+</Project>
